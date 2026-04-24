@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+
+  <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+<div class="navbar">
+  <div class="logo">
+    <img src="ncf.png" class="logo-img" alt="NCF Logo">
+
+    <div>
+      <strong>NAGA COLLEGE FOUNDATION, INC.</strong><br>
+      <small>Computer Vision Assisted Queue Management</small>
+    </div>
+  </div>
+
+  <div class="nav-links">
+    <a href="dashboard.html">Dashboard</a>
+    <a class="active" href="admin.html">Admin Panel</a>
+    <a href="registrar.html">Registrar Display</a>
+    <a href="cashier.html">Cashier Display</a>
+    <a href="index.html" class="logout">Logout</a>
+  </div>
+</div>
+
+<div class="admin-container">
+
+  <div class="admin-box">
+
+    <h2 class="title">ADMIN PANEL</h2>
+
+    <div class="top">
+
+      <div class="left-panel">
+
+        <label for="department">Department</label>
+        <select id="department" name="department">
+          <option value="">Select Department</option>
+          <option value="registrar">Registrar</option>
+          <option value="cashier">Cashier</option>
+        </select>
+
+        <div class="current-box">
+          <label>Current Number</label>
+          <div id="currentNumber">------</div>
+        </div>
+
+        <div class="buttons">
+          <button onclick="callNext()">CALL NEXT</button>
+          <button onclick="recall()">RECALL</button>
+          <button onclick="skip()">SKIP</button>
+          <button onclick="complete()">COMPLETE</button>
+          <button class="reset" onclick="resetSystem()">RESET</button>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="queue-section">
+      <h3>Waiting Queue</h3>
+      <div class="queue-box" id="queueBox">
+        No one waiting
+      </div>
+    </div>
+
+    <div class="windows-section">
+      <h3>Service Windows</h3>
+
+      <div class="windows">
+        <div class="window" id="window0">Window 1<div class="line">--------</div></div>
+        <div class="window" id="window1">Window 2<div class="line">--------</div></div>
+        <div class="window" id="window2">Window 3<div class="line">--------</div></div>
+        <div class="window" id="window3">Window 4<div class="line">--------</div></div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>

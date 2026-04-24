@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="navbar">
+  <div class="logo">
+    <img src="ncf.png" class="logo-img" alt="NCF Logo">
+    <div>
+      <strong>NAGA COLLEGE FOUNDATION, INC.</strong><br>
+      <small>Computer Vision Assisted Queue System</small>
+    </div>
+  </div>
+
+  <div class="nav-links">
+    <a class="active" href="dashboard.html">Dashboard</a>
+    <a href="admin.html">Admin Panel</a>
+    <a href="registrar.html">Registrar Display</a>
+    <a href="cashier.html">Cashier Display</a>
+    <a class="logout" href="index.html">Logout</a>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="dashboard-card">
+
+    <div class="section">
+      <h3>Computer Vision Integration</h3>
+
+      <div class="cards">
+        <div class="card">
+          Queue Detection
+          <span class="badge green">Active</span>
+          <p>Automatic student count from live feed</p>
+        </div>
+
+        <div class="card">
+          Object Detection
+          <span class="badge yellow">Standby</span>
+          <p>Real-time detection system</p>
+        </div>
+
+        <div class="card">
+          Crowd Analytics
+          <span class="badge blue">Ready</span>
+          <p>Monitor crowd flow</p>
+        </div>
+      </div>
+
+      <div class="status-box">
+        🟢 Camera feed connected – Ready
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="box">0<br><small>Waiting</small></div>
+      <div class="box">0<br><small>Serving</small></div>
+      <div class="box">0<br><small>Completed</small></div>
+      <div class="box">0m<br><small>Avg Wait</small></div>
+    </div>
+
+    <div class="grid">
+
+      <div class="form-card">
+        <h3>+ New Queue Entry</h3>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter Name">
+
+        <label for="studentId">Student ID</label>
+        <input type="text" id="studentId" placeholder="Enter Student ID">
+
+        <label for="department">Department</label>
+        <select id="department" title="Select Department" onchange="updateService()">
+          <option value="">Select Department</option>
+          <option value="registrar">Registrar</option>
+          <option value="cashier">Cashier</option>
+        </select>
+
+        <label for="service">Service Type</label>
+        <select id="service" title="Select Service Type">
+          <option value="">Select Service</option>
+        </select>
+
+        <button onclick="addToQueue()">Add to Queue</button>
+      </div>
+
+      <div class="table-card">
+        <h3>Queue List</h3>
+
+        <table id="queueTable">
+          <tr>
+            <th>Queue No.</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Service</th>
+            <th>Status</th>
+          </tr>
+
+          <tr>
+            <td colspan="5" class="center-text">
+              No queue entries yet
+            </td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

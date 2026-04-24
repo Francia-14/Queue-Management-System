@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrar Display</title>
+  <link rel="stylesheet" href="display.css">
+</head>
+
+<body>
+
+<div class="header">
+
+  <div class="header-left">
+    <img src="ncf.png" class="logo-img" alt="NCF Logo">
+
+    <div>
+      <strong>Naga College Foundation, Inc.</strong><br>
+      <small>Computer Vision Assisted Queue Management System</small>
+    </div>
+  </div>
+
+  <div id="time"></div>
+
+</div>
+
+<h1>REGISTRAR QUEUE DISPLAY</h1>
+
+<div class="windows">
+  <div class="box" id="window1">WINDOW 1<span>-----</span><p>AVAILABLE</p></div>
+  <div class="box" id="window2">WINDOW 2<span>-----</span><p>AVAILABLE</p></div>
+  <div class="box" id="window3">WINDOW 3<span>-----</span><p>AVAILABLE</p></div>
+  <div class="box" id="window4">WINDOW 4<span>-----</span><p>AVAILABLE</p></div>
+</div>
+
+<div class="stats">
+  <div class="stat"><h2 id="waiting">0</h2><p>WAITING</p></div>
+  <div class="stat"><h2 id="serving">0</h2><p>NOW SERVING</p></div>
+  <div class="stat"><h2 id="completed">0</h2><p>COMPLETED</p></div>
+</div>
+
+<div class="back-btn">
+  <a href="index.html" onclick="return confirm('Return to login page?')">
+    ← Back to Login
+  </a>
+</div>
+
+<script src="display.js"></script>
+<script>
+  loadDisplay("registrar");
+</script>
+
+</body>
+</html>
