@@ -1,16 +1,9 @@
-/* =========================
-   GLOBAL
-========================= */
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #eef7ee;
 }
 
-/* =========================
-   NAVBAR
-========================= */
 
 .navbar {
   background: #1f6f3d;
@@ -27,7 +20,6 @@ body {
   gap: 15px;
 }
 
-/* LOGO IMAGE */
 .logo-img {
   width: 35px !important;
   height: 35px !important;
@@ -35,7 +27,6 @@ body {
   display: block;
 }
 
-/* NAV LINKS */
 .nav-links {
   display: flex;
   gap: 10px;
@@ -70,9 +61,6 @@ body {
   color: #1f6f3d;
 }
 
-/* =========================
-   LOGIN
-========================= */
 
 .login-wrapper {
   height: calc(100vh - 70px);
@@ -102,7 +90,6 @@ body {
   margin-bottom: 15px;
 }
 
-/* FORM */
 .form-row {
   display: flex;
   flex-direction: column;
@@ -124,7 +111,6 @@ body {
   border-radius: 6px;
 }
 
-/* BUTTON */
 button {
   width: 100%;
   padding: 11px;
@@ -141,9 +127,6 @@ button:hover {
   background: #14522b;
 }
 
-/* =========================
-   DASHBOARD
-========================= */
 
 .container {
   display: flex;
@@ -166,7 +149,6 @@ button:hover {
   margin-bottom: 18px;
 }
 
-/* CARDS */
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -192,7 +174,6 @@ button:hover {
   margin-top: 6px;
 }
 
-/* BADGES */
 .badge {
   position: absolute;
   top: 10px;
@@ -207,7 +188,6 @@ button:hover {
 .yellow { background: #f1c40f; color: #000; }
 .blue { background: #3498db; }
 
-/* STATS */
 .stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -232,7 +212,6 @@ button:hover {
   margin-top: 5px;
 }
 
-/* GRID */
 .grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -254,7 +233,6 @@ button:hover {
   margin-bottom: 12px;
 }
 
-/* INPUTS */
 input,
 select {
   width: 100%;
@@ -270,7 +248,6 @@ select:focus {
   border-color: #1f6f3d;
 }
 
-/* TABLE */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -296,7 +273,6 @@ td {
   padding: 20px;
 }
 
-/* ADMIN */
 .admin-container {
   display: flex;
   justify-content: center;

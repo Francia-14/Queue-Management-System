@@ -40,6 +40,7 @@
       <div class="left-panel">
 
         <label for="department">Department</label>
+
         <select id="department" name="department">
           <option value="">Select Department</option>
           <option value="registrar">Registrar</option>
@@ -51,33 +52,39 @@
           <div id="currentNumber">------</div>
         </div>
 
-        <div class="buttons">
-          <button onclick="callNext()">CALL NEXT</button>
-          <button onclick="recall()">RECALL</button>
-          <button onclick="skip()">SKIP</button>
-          <button onclick="complete()">COMPLETE</button>
-          <button class="reset" onclick="resetSystem()">RESET</button>
-        </div>
+       <div class="buttons">
+  <button onclick="callNext()">CALL NEXT</button>
+  <button onclick="recall()">RECALL</button>
+  <button onclick="skipQueue()">SKIP</button>
+  <button onclick="completeQueue()">COMPLETE</button>
+  <button class="reset" onclick="resetSystem()">RESET</button>
+</div>
 
       </div>
 
     </div>
 
+    <!-- WAITING -->
     <div class="queue-section">
       <h3>Waiting Queue</h3>
+
       <div class="queue-box" id="queueBox">
         No one waiting
       </div>
     </div>
 
+    <!-- SERVICE AREA -->
     <div class="windows-section">
-      <h3>Service Windows</h3>
 
-      <div class="windows">
-        <div class="window" id="window0">Window 1<div class="line">--------</div></div>
-        <div class="window" id="window1">Window 2<div class="line">--------</div></div>
-        <div class="window" id="window2">Window 3<div class="line">--------</div></div>
-        <div class="window" id="window3">Window 4<div class="line">--------</div></div>
+      <h3 id="serviceTitle">Service Windows</h3>
+
+      <div class="windows" id="serviceArea">
+
+        <!-- DEFAULT -->
+        <div class="window">
+          Select Department
+        </div>
+
       </div>
 
     </div>

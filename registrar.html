@@ -4,35 +4,63 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registrar Display</title>
+
   <link rel="stylesheet" href="display.css">
 </head>
 
 <body>
 
 <div class="header">
-
   <div class="header-left">
     <img src="ncf.png" class="logo-img" alt="NCF Logo">
 
     <div>
       <strong>Naga College Foundation, Inc.</strong><br>
-      <small>Computer Vision Assisted Queue Management System</small>
+      <small>Queue Management System</small>
     </div>
   </div>
 
   <div id="time"></div>
-
 </div>
 
 <h1>REGISTRAR QUEUE DISPLAY</h1>
 
+<!-- SAME FORMAT AS CASHIER -->
 <div class="windows">
-  <div class="box" id="window1">WINDOW 1<span>-----</span><p>AVAILABLE</p></div>
-  <div class="box" id="window2">WINDOW 2<span>-----</span><p>AVAILABLE</p></div>
-  <div class="box" id="window3">WINDOW 3<span>-----</span><p>AVAILABLE</p></div>
-  <div class="box" id="window4">WINDOW 4<span>-----</span><p>AVAILABLE</p></div>
+
+  <div class="box" id="A1">
+    COUNTER A1
+    <span>-----</span>
+    <p>AVAILABLE</p>
+  </div>
+
+  <div class="box" id="A2">
+    COUNTER A2
+    <span>-----</span>
+    <p>AVAILABLE</p>
+  </div>
+
+  <div class="box" id="B">
+    COUNTER B
+    <span>-----</span>
+    <p>AVAILABLE</p>
+  </div>
+
+  <div class="box" id="C">
+    COUNTER C
+    <span>-----</span>
+    <p>AVAILABLE</p>
+  </div>
+
+  <div class="box" id="D">
+    COUNTER D
+    <span>-----</span>
+    <p>AVAILABLE</p>
+  </div>
+
 </div>
 
+<!-- STATS -->
 <div class="stats">
   <div class="stat"><h2 id="waiting">0</h2><p>WAITING</p></div>
   <div class="stat"><h2 id="serving">0</h2><p>NOW SERVING</p></div>
@@ -40,9 +68,7 @@
 </div>
 
 <div class="back-btn">
-  <a href="index.html" onclick="return confirm('Return to login page?')">
-    ← Back to Login
-  </a>
+  <a href="index.html">← Back</a>
 </div>
 
 <script src="display.js"></script>
